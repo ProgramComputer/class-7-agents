@@ -1,4 +1,4 @@
-# Week 3.3 Agents
+# Class 7: Agents
 
 ## Introduction
 AI agents use LLMs to generate reasoning steps and select actions in sequence, enabling them to make decisions and solve complex tasks through dynamic interaction with their environment.
@@ -8,7 +8,7 @@ AI agents use LLMs to generate reasoning steps and select actions in sequence, e
 - Python 3.11 or greater (Python virtual environment setup)
 
 ## Class Slides
-[Slides]()
+[Slides](https://docs.google.com/presentation/d/1FqktiJf8QOwlFy2abibPuls7iaBdLr9boQbXTMg8P7Y/edit?usp=sharing)
 
 ## Setup and Execution
 
@@ -25,7 +25,7 @@ AI agents use LLMs to generate reasoning steps and select actions in sequence, e
    OPENAI_API_KEY=your-openai-key
    LANGCHAIN_API_KEY=your-langchain-key
    LANGCHAIN_TRACING_V2=true
-   LANGCHAIN_PROJECT=24a7_3_3
+   LANGCHAIN_PROJECT=class_7
    TAVILY_API_KEY=your-tavily-key
   ```
 ## Docker
