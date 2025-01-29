@@ -5,8 +5,8 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_core.output_parsers import StrOutputParser
 # from langchain import hub
-
-
+from dotenv import load_dotenv
+import os
 @tool
 def web_research(query: str) -> str:
     """
@@ -24,6 +24,9 @@ def write_report(research_data: str) -> str:
     """
     Writes a structured report based on the provided topic and research data.
     """
+
+
+ 
     writer = ChatOpenAI(model="gpt-4o-mini")
     prompt = ChatPromptTemplate.from_messages(
         [
@@ -47,6 +50,7 @@ def save_to_file(report: str, filename: str) -> str:
         file.write(report)
     return f"Content saved successfully to {filename}"
 
+load_dotenv()
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.15)
 
